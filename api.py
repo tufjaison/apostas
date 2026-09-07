@@ -131,5 +131,9 @@ def compute_ev(prob_home, odds_home, odds_away):
     ev_home = (prob_home * odds_home) - 1
     ev_away = (prob_away * odds_away) - 1
     return ev_home, ev_away
+    
+def get_match_stats_with_cache(match_id):
+    """Obtém estatísticas de uma partida com cache simples."""
+    return get_match_stats(match_id)
 
 init_stats_cache()
